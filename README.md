@@ -2,11 +2,42 @@
 
 # 拾材集 · MatPick
 
-面向酒店与商业空间设计师的材料协同平台 · V1.0 MVP
+**面向酒店 / 商业空间设计师的材料协同 SaaS 平台 · V1.0 MVP**
 
-**[简体中文](#简体中文) ｜ [English](#english)**
+A material-collaboration SaaS platform for hotel & commercial-space designers · V1.0 MVP
 
 </div>
+
+---
+
+## 项目简介 · Overview
+
+**拾材集（MatPick）** 是一个面向酒店设计师、商业空间设计师与设计公司项目负责人的电脑端 SaaS 平台。它把"找材料 → 上方案 → 看效果 → 算报价 → 发订单"这条原本散落在 Excel、聊天群和供应商电话里的流程，整合到一个工作区里完成。
+
+**MatPick** is a desktop SaaS that lets hotel and commercial interior designers handle the full *find material → upload plan → preview → quote → order* loop in one workspace, instead of bouncing between spreadsheets, group chats, and supplier calls.
+
+### 核心功能 · Key features
+
+| 功能 · Feature | 说明 · Description |
+| --- | --- |
+| 🪄 **AI 区域识别** · AI region detection | 上传效果图后自动识别墙面 / 地面 / 顶面 / 柜体 / 软装等区域并测算面积 |
+| 🎨 **材质替换工作区** · Material workspace | 在效果图上选区，从材料库一键替换并实时预览替换前后对比 |
+| 📚 **材料库** · Material library | 12000+ 材料 SKU，支持分类、环保 / 防火等级、价格区间筛选与多选比价 |
+| 💰 **智能报价** · Smart quote | 自动按区域 × 材料 × 损耗 × 税费 × 运费生成报价单，带版本历史 |
+| 🔄 **相似材料比价** · Similar-material comparison | AI 推荐相似材料，按相似度、单价、交期、节省额度排序，一键替换 |
+| 📦 **订货协同** · Supplier orders | 按供应商分组下单，订单状态时间线（待确认 / 待发货 / 运输中 / 已完成 / 售后） |
+| 👥 **团队协作** · Team collaboration | 项目动态、待办、消息、协作成员，多人共同推进方案 |
+
+### 产品截图 · Screenshots
+
+#### 方案上传 + AI 识别 · Plan upload + AI recognition
+![方案上传页](docs/screenshots/01-upload.png)
+
+#### 材质替换工作区 · Material replacement workspace
+![材质替换工作区](docs/screenshots/02-workspace.png)
+
+#### 相似材料比价 · Similar-material comparison
+![相似材料比价](docs/screenshots/03-compare.png)
 
 ---
 
@@ -68,6 +99,7 @@ lib/
   types.ts              # 业务实体类型
   utils.ts              # cn / formatCurrency / relativeTime 等
   mock/                 # 项目、材料、供应商、报价、比价、订单、社交数据
+docs/screenshots/       # README 中引用的产品截图
 ```
 
 ### 页面清单
@@ -189,6 +221,7 @@ lib/
   types.ts              # Domain entity types
   utils.ts              # cn / formatCurrency / relativeTime …
   mock/                 # projects, materials, suppliers, quotes, comparisons, orders, social
+docs/screenshots/       # Product screenshots referenced in this README
 ```
 
 ### Pages

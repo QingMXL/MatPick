@@ -1,0 +1,8 @@
+node_modules
+.next
+.vercel
+.DS_Store
+*.log
+
+# Local-only Claude Code permission allowlist (do not publish)
+.claude/settings.local.json
